@@ -1,0 +1,19 @@
+body div{
+    width: 80%;
+    margin: auto;
+}
+
+div input{
+    width: 80%;
+}
+
+.biglietto{
+    border: 2px solid black;
+    padding: 2%;
+    border-radius: 15px;
+    width: 60%;
+}
+
+div.biglietto div{
+    width: 100%;
+}

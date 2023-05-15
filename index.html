@@ -1,24 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biglietto del treno</title>
-</head>
-<body>
-    <div>
-        <input type="number" name="userKm" id="userKm" placeholder="inserisca i km da percorrere">
-    </div>
-    <div>
-        <input type="number" name="userAge" id="userAge" placeholder="inserisca la sua età">
-    </div>
-    <div>
-        <button class="button">Calcola</button>
-    </div>
-    <div >
-        <pre id="result"></pre>
-    </div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biglietto del treno</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="mt-3 mb-5">
+            <h1>
+                Acquista il tuo biglietto qui:
+            </h1>
+        </div>
+        
+        <div class="mb-3">
+            <h2 class="fs-4">
+                Inserisci i chilometri che devi percorrere:
+            </h2>
+            <input type="number" name="userKm" id="userKm" placeholder="inserisca i km da percorrere" class="rounded-2" >
+        </div>
+        <div class="mb-3">
+            <h2 class="fs-4">
+                Inserisci la tua età:
+            </h2>
+            <input type="number" name="userAge" id="userAge" placeholder="inserisca la sua età" class="rounded-2">
+        </div>
+        <div class="mb-3">
+            <h2 class="fs-4">
+                Scrivi il tuo nome:
+            </h2>
+            <input type="text" name="userAge" id="userName" placeholder="inserisca il suo nome" class="rounded-2">
+        </div>
+        <div class="mb-3">
+            <h2 class="fs-4">
+                Scrivi il tuo cognome:
+            </h2>
+            <input type="text" name="userAge" id="userLastName" placeholder="inserisca il suo cognome" class="rounded-2">
+        </div>
+        <div class="mb-5">
+            <button class="btn btn-primary">Invio!</button>
+        </div>
+
+        <div class="biglietto">
+            <div>
+                <h3 class="fs-6">
+                    Nome del passeggero:
+                </h3>
+                <p id="userName2"></p>
+            </div>
+            <div>
+                <h3 class="fs-6">
+                    Cognome del passeggero:
+                </h3>
+                <p id="userLastName2"></p>
+            </div>
+            <div>
+                <h3 class="fs-6">
+                    Età del passeggero:
+                </h3>
+                <p id="userAge2"></p>
+            </div>
+            <div>
+                <h3 class="fs-6">
+                    Chilometri da percorrere:
+                </h3>
+                <p id="userKm2"></p>
+            </div>
+            <div>
+                <h3 class="fs-6">
+                    Prezzo da pagare:
+                </h3>
+                <p id="result"></p>
+            </div>
+            
+        </div>
+        <div class="mb-5"></div>
 
 
 
@@ -26,7 +84,6 @@
 
 
 
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <script src="script.js"></script>
+    </body>
+    </html>

@@ -1,6 +1,8 @@
 const inputKm = document.getElementById ('userKm')
 const inputAge =   document.getElementById ('userAge')
-const button = document.querySelector ('button.button')
+const inputName =   document.getElementById ('userName')
+const inputLastName =   document.getElementById ('userLastName')
+const button = document.querySelector ('button.btn')
 const priceKm = 0.233
 let price
 let result
@@ -15,4 +17,8 @@ button.addEventListener('click', function(){
     }
     console.log (price)
     document.getElementById('result').innerHTML = price.toFixed(2)
+    document.getElementById('userName2').innerHTML = userName.value
+    document.getElementById('userLastName2').innerHTML = userLastName.value
+    document.getElementById('userAge2').innerHTML = userAge.value
+    document.getElementById('userKm2').innerHTML = userKm.value
 })
